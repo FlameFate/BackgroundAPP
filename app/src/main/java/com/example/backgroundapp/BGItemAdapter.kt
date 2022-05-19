@@ -27,11 +27,13 @@ class CustomAdapter(private val mList: List<BGItem>) : RecyclerView.Adapter<Cust
         val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-
+var url="https://square.github.io/picasso/static/sample.png"
         //holder.imageView.setImageResource(ItemsViewModel.image)
-        Picasso.get().load(com.google.android.material.R.drawable.ic_clock_black_24dp).into(holder.imageView);
+        //Picasso.get().load(com.google.android.material.R.drawable.ic_clock_black_24dp).into(holder.imageView);
         //Picasso.get().load("https://square.github.io/picasso/static/sample.png").placeholder(R.drawable.ic_launcher_background).into(holder.imageView)
         // sets the text to the textview from our itemHolder class
+        //Picasso.get().load(url).into(holder.imageView)
+        Picasso.get().load("https://i4.ytimg.com/vi/psh_iNG3Csw/hqdefault.jpg").into(holder.imageView)
 
 
     }
