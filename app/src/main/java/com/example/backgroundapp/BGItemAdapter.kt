@@ -1,3 +1,4 @@
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -6,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.backgroundapp.BGItem
 import com.example.backgroundapp.R
+import com.squareup.picasso.Picasso
 
 class CustomAdapter(private val mList: List<BGItem>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
@@ -25,8 +27,10 @@ class CustomAdapter(private val mList: List<BGItem>) : RecyclerView.Adapter<Cust
         val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-        holder.imageView.setImageResource(ItemsViewModel.image)
 
+        //holder.imageView.setImageResource(ItemsViewModel.image)
+        Picasso.get().load(com.google.android.material.R.drawable.ic_clock_black_24dp).into(holder.imageView);
+        //Picasso.get().load("https://square.github.io/picasso/static/sample.png").placeholder(R.drawable.ic_launcher_background).into(holder.imageView)
         // sets the text to the textview from our itemHolder class
 
 
