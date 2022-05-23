@@ -9,12 +9,12 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=backgrounds")
+    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=backgrounds&safesearch=true")
     fun getMovies() : Call<WallpaperApi>
 
-    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=fashion")
+    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=fashion&safesearch=true")
     fun getFashion() : Call<WallpaperApi>
-    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=business")
+    @GET("api/?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=business&safesearch=true")
     fun getBusiness() : Call<WallpaperApi>
 
     companion object {
