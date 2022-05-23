@@ -8,12 +8,12 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("volley_array.json")
-    fun getMovies() : Call<List<Movie>>
+    @GET("?key=21194026-a9b46665d99755d852a93eb05&q&orientation=vertical&category=backgrounds")
+    fun getMovies() : Call<WallpaperApi>
 
     companion object {
 
-        var BASE_URL = "http://velmm.com/apis/"
+        var BASE_URL = "https://pixabay.com/api/"
 
         fun create() : ApiInterface {
 

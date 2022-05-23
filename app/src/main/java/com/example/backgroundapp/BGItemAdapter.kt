@@ -3,13 +3,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.backgroundapp.BGItem
+import com.example.backgroundapp.Hit
 import com.example.backgroundapp.R
 import com.squareup.picasso.Picasso
 
-class CustomAdapter(private val mList: List<BGItem>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(private val mList: List<Hit>?) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -24,7 +23,7 @@ class CustomAdapter(private val mList: List<BGItem>) : RecyclerView.Adapter<Cust
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val ItemsViewModel = mList[position]
+        val ItemsViewModel = mList?.get(position)
 
         // sets the image to the imageview from our itemHolder class
 var url="https://square.github.io/picasso/static/sample.png"
@@ -33,14 +32,14 @@ var url="https://square.github.io/picasso/static/sample.png"
         //Picasso.get().load("https://square.github.io/picasso/static/sample.png").placeholder(R.drawable.ic_launcher_background).into(holder.imageView)
         // sets the text to the textview from our itemHolder class
         //Picasso.get().load(url).into(holder.imageView)
-        Picasso.get().load("https://i4.ytimg.com/vi/psh_iNG3Csw/hqdefault.jpg").into(holder.imageView)
+        Picasso.get().load(mList?.get(position)?.webformatURL).into(holder.imageView)
 
 
     }
 
     // return the number of the items in the list
     override fun getItemCount(): Int {
-        return mList.size
+        return mList!!.size
     }
 
     // Holds the views for adding it to image and text

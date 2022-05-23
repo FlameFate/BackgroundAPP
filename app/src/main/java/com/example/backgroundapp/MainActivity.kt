@@ -38,22 +38,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         // This will pass the ArrayList to our Adapter
-        val adapter = CustomAdapter(data)
 
-        // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
 
         val apiInterface = ApiInterface.create().getMovies()
 
         //apiInterface.enqueue( Callback<List<Movie>>())
-        apiInterface.enqueue( object : Callback<List<Movie>> {
-            override fun onResponse(call: Call<List<Movie>>?, response: Response<List<Movie>>?) {
+        apiInterface.enqueue( object : Callback<WallpaperApi> {
+            override fun onResponse(call: Call<WallpaperApi>?, response: Response<WallpaperApi>?) {
+                val adapter = CustomAdapter(response?.body()?.hits)
 
+                // Setting the Adapter with the recyclerview
+                recyclerview.adapter = adapter
                // if(response?.body() != null)
                    // recyclerAdapter.setMovieListItems(response.body()!!)
             }
 
-            override fun onFailure(call: Call<List<Movie>>?, t: Throwable?) {
+            override fun onFailure(call: Call<WallpaperApi>?, t: Throwable?) {
 
             }
         })
