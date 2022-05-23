@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.backgroundapp.databinding.ActivityMainBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +42,21 @@ class MainActivity : AppCompatActivity() {
 
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
+
+        val apiInterface = ApiInterface.create().getMovies()
+
+        //apiInterface.enqueue( Callback<List<Movie>>())
+        apiInterface.enqueue( object : Callback<List<Movie>> {
+            override fun onResponse(call: Call<List<Movie>>?, response: Response<List<Movie>>?) {
+
+               // if(response?.body() != null)
+                   // recyclerAdapter.setMovieListItems(response.body()!!)
+            }
+
+            override fun onFailure(call: Call<List<Movie>>?, t: Throwable?) {
+
+            }
+        })
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
