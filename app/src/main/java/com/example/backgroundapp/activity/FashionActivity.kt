@@ -1,12 +1,14 @@
-package com.example.backgroundapp
+package com.example.backgroundapp.activity
 
 import CustomAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.backgroundapp.R
+import com.example.backgroundapp.data.WallpaperApi
+import com.example.backgroundapp.model.ApiInterface
 import com.example.backgroundapp.databinding.ActivityFashionBinding
-import com.example.backgroundapp.databinding.ActivityPresentBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

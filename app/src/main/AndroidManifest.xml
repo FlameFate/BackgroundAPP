@@ -15,17 +15,17 @@
             android:name=".RandomActivity"
             android:exported="false" />
         <activity
-            android:name=".BusinessActivity"
+            android:name=".activity.BusinessActivity"
             android:exported="false" />
         <activity
-            android:name=".FashionActivity"
+            android:name=".activity.FashionActivity"
             android:exported="false" />
         <activity
-            android:name=".PresentActivity"
+            android:name=".activity.PresentActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

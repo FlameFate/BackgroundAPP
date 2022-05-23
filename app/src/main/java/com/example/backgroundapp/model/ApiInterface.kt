@@ -1,6 +1,7 @@
-package com.example.backgroundapp
+package com.example.backgroundapp.model
 
 
+import com.example.backgroundapp.data.WallpaperApi
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

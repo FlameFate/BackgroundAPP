@@ -1,4 +1,4 @@
-package com.example.backgroundapp
+package com.example.backgroundapp.data
 
 data class WallpaperApi(
     val hits: List<Hit>,

@@ -1,10 +1,9 @@
-package com.example.backgroundapp
+package com.example.backgroundapp.activity
 
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.view.Window
+
 
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,11 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
-    var bt = bindingClass.btPresent
-    var bt2 = bindingClass.tvFashion
-        var bt2F= bindingClass.iVFashion
-        var bt3F=bindingClass.iVBusiness
-        var bt3=bindingClass.tvBusiness
+    val bt = bindingClass.btPresent
+    val bt2 = bindingClass.tvFashion
+        val bt2F= bindingClass.iVFashion
+        val bt3F=bindingClass.iVBusiness
+        val bt3=bindingClass.tvBusiness
 
         bt.setOnClickListener {
 
@@ -34,19 +33,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 bt2.setOnClickListener{
-    val intent = Intent(this@MainActivity,FashionActivity::class.java)
+    val intent = Intent(this@MainActivity, FashionActivity::class.java)
     startActivity(intent)
 }
         bt2F.setOnClickListener{
-    val intent = Intent(this@MainActivity,FashionActivity::class.java)
+    val intent = Intent(this@MainActivity, FashionActivity::class.java)
     startActivity(intent)
 }
         bt3.setOnClickListener{
-    val intent = Intent(this@MainActivity,BusinessActivity::class.java)
+    val intent = Intent(this@MainActivity, BusinessActivity::class.java)
     startActivity(intent)
 }
         bt3F.setOnClickListener{
-    val intent = Intent(this@MainActivity,BusinessActivity::class.java)
+    val intent = Intent(this@MainActivity, BusinessActivity::class.java)
     startActivity(intent)
 }
 

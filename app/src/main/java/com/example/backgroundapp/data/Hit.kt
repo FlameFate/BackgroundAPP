@@ -1,4 +1,4 @@
-package com.example.backgroundapp
+package com.example.backgroundapp.data
 
 data class Hit(
     val collections: Int,
