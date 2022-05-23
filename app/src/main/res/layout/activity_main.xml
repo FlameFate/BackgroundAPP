@@ -36,4 +36,64 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.523" />
+
+    <ImageView
+        android:id="@+id/iV_Fashion"
+        android:layout_width="173dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        app:srcCompat="@drawable/fashion" />
+
+    <TextView
+        android:id="@+id/tv_Fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:shadowColor="#2C2B2B"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Fashion"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iV_Fashion"
+        app:layout_constraintEnd_toEndOf="@+id/iV_Fashion"
+        app:layout_constraintStart_toStartOf="@+id/iV_Fashion"
+        app:layout_constraintTop_toTopOf="@+id/iV_Fashion" />
+
+
+    <ImageView
+        android:id="@+id/iV_business"
+        android:layout_width="173dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iV_Fashion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        app:srcCompat="@drawable/business" />
+
+    <TextView
+        android:id="@+id/tv_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:shadowColor="#2C2B2B"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Business"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iV_business"
+        app:layout_constraintEnd_toEndOf="@+id/iV_business"
+        app:layout_constraintStart_toStartOf="@+id/iV_business"
+        app:layout_constraintTop_toTopOf="@+id/iV_business" />
 </androidx.constraintlayout.widget.ConstraintLayout>

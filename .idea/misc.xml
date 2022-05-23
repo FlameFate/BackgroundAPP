@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BackgroundAPP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2605" />
         <entry key="..\:/BackgroundAPP/app/src/main/res/drawable/ic_baseline_backpack_24.xml" value="0.2985" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2605" />
         <entry key="..\:/BackgroundAPP/app/src/main/res/drawable/mainwallpaper.xml" value="0.2985" />
-        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_business.xml" value="0.19794784095767423" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_fashion.xml" value="0.2689183411714408" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_present.xml" value="0.15433946130825138" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/activity_random.xml" value="0.19794784095767423" />
+        <entry key="..\:/BackgroundAPP/app/src/main/res/layout/bg_item_fashionadapter.xml" value="0.2689183411714408" />
         <entry key="..\:/BackgroundAPP/app/src/main/res/layout/bg_item_layout.xml" value="0.15433946130825138" />
       </map>
     </option>
