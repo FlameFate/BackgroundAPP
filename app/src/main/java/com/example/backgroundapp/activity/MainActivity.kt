@@ -7,9 +7,11 @@ import android.widget.Toast
 
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
+import com.example.backgroundapp.R
 
 import com.example.backgroundapp.databinding.ActivityMainBinding
-
+import com.example.backgroundapp.fragments.MainFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +54,11 @@ bt2.setOnClickListener{
     val intent = Intent(this@MainActivity, BusinessActivity::class.java)
     startActivity(intent)
 }
+
+supportFragmentManager
+    .beginTransaction()
+    .replace(R.id.place_holder, MainFragment.newInstance())
+    .commit()
 
 
 }

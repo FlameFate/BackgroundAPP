@@ -9,6 +9,18 @@
     tools:context=".activity.MainActivity">
 
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/place_holder"
+        android:name="com.example.backgroundapp.fragments.MainFragment"
+        android:layout_width="106dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
     <Button
         android:id="@+id/bt_present"
         android:layout_width="204dp"
