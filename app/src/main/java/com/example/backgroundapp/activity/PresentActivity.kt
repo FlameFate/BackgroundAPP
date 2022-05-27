@@ -25,6 +25,7 @@ class PresentActivity : AppCompatActivity() {
 
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
 
+
         // this creates a vertical layout Manager
         recyclerview.layoutManager = GridLayoutManager(this,2)
 

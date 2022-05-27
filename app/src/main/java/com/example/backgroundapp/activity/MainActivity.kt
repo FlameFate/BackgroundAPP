@@ -29,10 +29,8 @@ class MainActivity : AppCompatActivity() {
         val bt2F= bindingClass.iVFashion
         val bt3F=bindingClass.iVBusiness
         val bt3=bindingClass.tvBusiness
-val btr=bindingClass.btRandom
-        btr.setOnClickListener{
-            Toast.makeText(this, "Будет реализовано в будущем", Toast.LENGTH_SHORT)
-        }
+
+
         bt.setOnClickListener {
 
             val intent = Intent(this@MainActivity, PresentActivity::class.java)
@@ -57,7 +55,7 @@ bt2.setOnClickListener{
 
 supportFragmentManager
     .beginTransaction()
-    .replace(R.id.place_holder, MainFragment.newInstance())
+    .replace(R.id.fragment_holder, MainFragment.newInstance())
     .commit()
 
 
